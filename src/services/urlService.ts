@@ -34,7 +34,7 @@ export const urlService = {
   },
 
   getUrlAnalytics: async (shortCode: string) => {
-    const response = await api.get<UrlAnalyticsType>(`/urls/${shortCode}/stats`);
+    const response = await api.get<UrlAnalyticsType>(`/analytics/${shortCode}`);
     return response.data;
   },
 

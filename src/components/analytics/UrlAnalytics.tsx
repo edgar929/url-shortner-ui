@@ -5,12 +5,8 @@ import { PieChartComponent } from './PieChartComponent';
 import { UrlAnalyticsType } from '../../types/analytics';
 import { AnalyticsSkeleton } from '../common/Skeleton/Skeleton';
 import { useParams } from 'react-router-dom';
-import { useUrls } from '../../hooks/useUrls';
 import { urlService } from '../../services/urlService';
 
-interface UrlAnalyticsProps {
-  shortCode: string;
-}
 
 export const UrlAnalytics = () => {
   const { shortCode } = useParams();
