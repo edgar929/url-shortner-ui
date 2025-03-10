@@ -16,8 +16,8 @@ Ensure you have the following installed:
 
 Clone the repository and install dependencies:
 ```sh
-git clone https://github.com/your-repo/url-shortener-frontend.git
-cd url-shortener-frontend
+git clone https://github.com/your-repo/url-shortener-ui.git
+cd url-shortener-ui
 npm install  # or yarn install
 ```
 
@@ -66,7 +66,7 @@ http://localhost:3000/api
 - **React Query / Axios** (API Handling)
 - **React Router** (Routing)
 
-## 👨‍💻 Contributors
+## 👨‍💻 Owner 
 - **Edgar Shumbusho** (@edgar929)
 
 ## 📜 License
