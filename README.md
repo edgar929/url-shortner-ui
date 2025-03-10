@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# URL Shortener Frontend (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This is the **frontend** for the **URL Shortener** project, built using **React, TypeScript, and Vite**. It provides a user-friendly interface for shortening URLs and managing them efficiently.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### 1️⃣ Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Recommended: v16+)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 2️⃣ Installation
+
+Clone the repository and install dependencies:
+```sh
+git clone https://github.com/your-repo/url-shortener-frontend.git
+cd url-shortener-frontend
+npm install  # or yarn install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3️⃣ Running the Project
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Start the development server:
+```sh
+npm run dev  # or yarn dev
 ```
+The application will be available at **`http://localhost:5173`**.
+
+## 🛠 Available Scripts
+
+| Command          | Description                      |
+| --------------- | -------------------------------- |
+| `npm run dev`   | Start the development server     |
+| `npm run build` | Build for production            |
+| `npm run preview` | Preview the production build |
+| `npm run lint`  | Run ESLint checks               |
+
+## 📡 API Integration
+
+This frontend interacts with the backend API for URL shortening and analytics. Ensure the backend is running before using the application. The default backend URL is:
+```sh
+http://localhost:3000/api
+```
+
+## 📂 Project Structure
+```
+/src
+  ├── components/      # Reusable UI components
+  ├── pages/           # Application pages
+  ├── hooks/           # Custom React hooks
+  ├── utils/           # Helper functions
+  ├── api/             # API request handlers
+  ├── assets/          # Static assets
+  ├── styles/          # Global styles
+  ├── App.tsx          # Root component
+  ├── main.tsx         # Entry point
+```
+
+## 🎨 Tech Stack
+- **React + TypeScript** (Frontend UI)
+- **Vite** (Fast development & build tool)
+- **TailwindCSS** (Styling)
+- **React Query / Axios** (API Handling)
+- **React Router** (Routing)
+
+## 👨‍💻 Contributors
+- **Edgar Shumbusho** (@edgar929)
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+---
+
+Made with ❤️ using React + TypeScript 🚀
+
